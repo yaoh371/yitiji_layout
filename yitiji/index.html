@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>一体机管理</title>
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="js/skin/layer.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="css/index.css" media="screen" type="text/css" />
+</head>
+<body>
+<header>
+    <div class="logo">
+        <!--<img src="image/logo.png" alt="logo">-->
+        一体机监控管理
+    </div>
+</header>
+<div class="content clearfix">
+    <div class="serviceIp">
+        <span class="serviceName">IP:</span><span id="IP">111</span>
+    </div>
+    <div class="detailBlock detailMain clearfix">
+        <table cellpadding="0" cellspacing="0" class="tableStyle">
+            <tr>
+                <td class="tdStyle"><div class="info redBg">基础支撑架构</div></td>
+                <td>
+                    <div class="switch">
+                        <label class="button" ><input type="checkbox" checked><span ></span><span></span></input></label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdStyle"><div class="info redBg">网络与传输系统</div></td>
+                <td>
+                    <div class="switch">
+                        <label class="button" ><input type="checkbox"><span ></span><span></span></input></label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdStyle"><div class="info">信息安全管理系统</div></td>
+                <td>
+                    <div class="switch">
+                        <label class="button" ><input type="checkbox" checked><span ></span><span></span></input></label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdStyle"><div class="info">计算与存储系统</div></td>
+                <td>
+                    <div class="switch">
+                        <label class="button" ><input type="checkbox" checked><span ></span><span></span></input></label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdStyle"><div class="info">APT</div></td>
+                <td>
+                    <div class="switch">
+                        <label class="button" ><input type="checkbox" checked><span ></span><span></span></input></label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdStyle"><div class="info">时钟同步系统</div></td>
+                <td>
+                    <div class="switch">
+                        <label class="button" ><input type="checkbox" checked><span ></span><span></span></input></label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdStyle"><div class="info">动态监测数据采集处理系统</div></td>
+                <td>
+                    <div class="switch">
+                        <label class="button" ><input type="checkbox" checked><span ></span><span></span></input></label>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div class="infoDetail clearfix">
+       <div class="detailStatus clearfix">
+            <div class="detailStatusLeft">
+                <div class="statues">
+                    <div class="condition clearfix">温度报警 ： </div>
+                    <div class="lightImg clearfix"><img src="image/lightbulb.png" alt=""></div>
+                </div>
+                <div class="statues">
+                    <div class="condition clearfix">水浸报警 ：  </div>
+                    <div class="lightImg clearfix"><img class="redBulb" src="image/lightbulb.png" alt=""></div>
+                </div>
+                <div class="statues">
+                    <div class="condition clearfix">烟敏报警 ：  </div>
+                    <div class="lightImg clearfix"><img src="image/lightbulb.png" alt=""></div>
+                </div>
+            </div>
+            <div class="detailStatusRight">
+                <div class="statues">
+                    <div class="condition clearfix">前门状态 ： </div>
+                    <div class="lightImg clearfix">
+                        <div class="switch">
+                            <label class="button"><input type="checkbox" checked  disabled="true"><span></span><span></span></input></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="statues">
+                    <div class="condition clearfix">后门状态 ： </div>
+                    <div class="lightImg clearfix">
+                        <div class="switch">
+                            <label class="button"><input type="checkbox" disabled="false"><span></span><span></span></input></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="detailTable">
+            <table cellpadding="0" cellspacing="0" class="tableStyle">
+                <tr><th>相对湿度(%)</th><th>前温度(摄氏度)</th><th>后温度(摄氏度)</th></tr>
+                <tr>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>6</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>7</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>8</td>
+                    <td>8</td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="detailBlock">
+            <table cellpadding="0" cellspacing="0" class="tableStyle">
+                <tr><th></th><th>电流(安倍)</th><th>电压(伏)</th><th>电量(瓦)</th></tr>
+                <tr>
+                    <td>PDU1</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>PDU2</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>6</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/layer.js"></script>
+<script type="text/javascript">
+    function shake(obj, speed1, speed2, time) {
+        setInterval(function(){ obj.fadeOut(speed1).fadeIn(speed2);},time);
+    }
+    shake($(".redBg"), 100, 100, 600);
+//    setInterval(function(){ $(".redBg").fadeOut(100).fadeIn(100);},600);
+    //禁止点击margin处出现蓝色边框
+    document.onselectstart=new Function("return false");
+//    $("input[type='checkbox']").attr('disabled', false);
+    console.log($('.switch span'));
+    $(function(){
+        $(".switch").click(
+
+        function(){
+            console.log('hello');
+//                this.checked = !this.checked;
+                /*var flag = $(this).is(':checked');
+                if(flag){
+                layer.confirm('您确定打开吗？', {
+                    btn: ['确定','取消']
+                    }
+                    , function(){
+                        flag = true;
+                        layer.msg('已打开');
+                    }, function(){
+                        flag = false;
+                    });
+                }else{
+                    layer.confirm('您确定关闭吗？', {
+                        btn: ['确定','取消']
+                     }, function(){
+                        flag = true;
+                        layer.msg('已关闭');
+                     }, function(){
+                        flag = false;
+                     });
+                }*/
+            }
+
+        );
+    });
+
+
+
+</script>
+</body>
+</html>
